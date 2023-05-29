@@ -6,7 +6,10 @@ int main() {
 	int s = 0;
 	int* arr = new int[5];
 	for (int i = 0; i < 5; i++) {
-		arr[i] = 2;
+		if (i % 2 == 0)
+			arr[i] = i;
+		else
+            arr[i] = 2;
 	}
 	cout << "Massive:\n";
 	for (int i = 0; i < 5; i++) {
